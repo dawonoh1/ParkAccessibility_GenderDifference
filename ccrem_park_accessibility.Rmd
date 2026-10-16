@@ -11,9 +11,10 @@ params:
   # "wide": build the long data from the wide origin-park file (full pipeline)
   # "long": read data_long_for_R.csv that the Python notebook already saved
   data_source: "wide"
-  wide_file: "C:/Users/ohdaw/OneDrive - Harvard University/snu_remains/redo/FINAL_dataset_2019only.csv"
-  long_file: "C:/Users/ohdaw/OneDrive - Harvard University/snu_remains/redo/ccrem_rerun/data_long_for_R.csv"
-  out_dir:   "C:/Users/ohdaw/OneDrive - Harvard University/snu_remains/redo/ccrem_rerun/R_output"
+  # Paths are relative to the project root (where this file lives)
+  wide_file: "data/FINAL_dataset_2019only.csv"
+  long_file: "data/data_long_for_R.csv"
+  out_dir:   "results"
   theta: 0.10
   run_optimizer_check: true
   run_lrt: true
